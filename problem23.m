@@ -5,14 +5,14 @@ for i=2:num
     a(i)=amicable(i);
 end
 j=1;
-for i=12:num
+for i=1:num
     if a(i)>i
         b(j)=i;
         j=j+1;
     end
 end
 c=1:num;
-for i=1:j-2
+for i=1:j
     for k=i+1:j-1
         if b(i)+b(k)>num
             continue;
